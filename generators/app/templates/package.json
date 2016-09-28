@@ -1,0 +1,38 @@
+{
+  "name": "<%= appname %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "dist/<%= appname %>.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --content-base dist/",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "eslint": "eslint ./src --ext .js --ext .jsx --cache || true",
+    "eslint:table": "eslint ./src --ext .js --ext .jsx --cache --format table || true",
+    "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true",
+    "commit": "git-cz",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= githubuser %>/<%= appname %>.git"
+  },
+  "keywords": [
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "<%= authorname %> <<%= authoremail %>>",
+  "license": "<%= license %>",
+  "bugs": {
+    "url": "https://github.com/<%= githubuser %>/<%= appname %>/issues"
+  },
+  "homepage": "https://github.com/<%= githubuser %>/<%= appname %>#readme",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run eslint"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "generator-er-react-component",
+  "version": "0.0.0",
+  "description": "Yeoman react component generator",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "generators/app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ercpereda/generator-er-react-component.git"
+  },
+  "keywords": [
+    "yeoman",
+    "generator",
+    "react",
+    "component",
+    "webpack"
+  ],
+  "author": "Ernesto R. C. Pereda <ercp42@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ercpereda/generator-er-react-component/issues"
+  },
+  "homepage": "https://github.com/ercpereda/generator-er-react-component#readme",
+  "dependencies": {
+    "yeoman-generator": "0.24.1"
+  },
+  "devDependencies": {
+    "commitizen": "2.8.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
