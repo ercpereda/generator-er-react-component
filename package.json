@@ -1,6 +1,6 @@
 {
   "name": "generator-er-react-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman react component generator",
   "scripts": {
     "commit": "git-cz",
